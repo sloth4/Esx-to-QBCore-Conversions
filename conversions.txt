@@ -1,5 +1,6 @@
 
-CLIENT SIDE
+- CLIENT SIDE
+
 esx:onPlayerDeath -> hospital:server:SetDeathStatus
 
 esx:playerLoaded -> QBCore:Client:OnPlayerLoaded (use for setting a variable to let the script know the player is ready)
@@ -63,7 +64,9 @@ ESX.Game.Teleport -> (Can use FiveM Native SetEntityCoords and SetEntityHeading)
 ESX.Game.Utils.DrawText3D -> QBCore.Functions.DrawText3D
 
 There is no direct translation for replacing ESX.Streaming or ESX.Scaleform or ESX.UI 
-SERVER SIDE
+
+- RVER SIDE
+
 ESX.CreatePickup -> None (irrelevant and done through qb-inventory)
 
 ESX.GetItemLabel -> None (Just returns item label)
@@ -85,7 +88,9 @@ ESX.SavePlayers -> None (dont bother)
 ESX.Trace -> Use QBCore.Debug but dont bother converting this
 
 ESX.UseItem -> QBCore.Functions.UseItem 
-XPLAYER
+
+- XPLAYER
+
 xPlayer.removeWeaponComponent -> xPlayer.Functions.RemoveItem (component name)
 
 xPlayer.setAccountMoney -> xPlayer.Functions.SetMoney (account)
@@ -111,7 +116,9 @@ xPlayer.showNotification -> TriggerClientEvent('QBCore:Notify')
 xPlayer.triggerEvent -> None (dont bother)
 
 xPlayer.updateCoords -> None (dont bother)
-EVENTS
+
+- EVENTS
+
 esx:getSharedObject -> QBCore:GetObject
 
 esx:setJob -> QBCore:Client:OnJobUpdate
